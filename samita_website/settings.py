@@ -54,7 +54,7 @@ ROOT_URLCONF = 'samita_website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'personal/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
